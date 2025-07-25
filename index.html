@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Namaz Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <div id="auth-section">
+      <h1>Namaz Tracker</h1>
+      <div id="signup-form">
+        <h2>Sign Up</h2>
+        <input type="email" id="signup-email" placeholder="Email" />
+        <input type="password" id="signup-password" placeholder="Password" />
+        <button id="signup-button">Sign Up</button>
+      </div>
+      <div id="login-form">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button id="login-button">Login</button>
+      </div>
+    </div>
+
+    <div id="dashboard" class="hidden">
+      <h1>Dashboard</h1>
+      <button id="logout-button">Logout</button>
+      <h2>Mark Today's Prayers</h2>
+      <div class="prayer-buttons">
+        <button class="prayer-btn" data-prayer="Fajr">Fajr</button>
+        <button class="prayer-btn" data-prayer="Dhuhr">Dhuhr</button>
+        <button class="prayer-btn" data-prayer="Asr">Asr</button>
+        <button class="prayer-btn" data-prayer="Maghrib">Maghrib</button>
+        <button class="prayer-btn" data-prayer="Isha">Isha</button>
+      </div>
+      <h2>History</h2>
+      <table id="history-table">
+        <thead>
+          <tr><th>Date</th><th>Fajr</th><th>Dhuhr</th><th>Asr</th><th>Maghrib</th><th>Isha</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
